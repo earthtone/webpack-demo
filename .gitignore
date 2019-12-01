@@ -1,0 +1,11 @@
+dist
+node_modules
+.DS_Store
+*swp*
+*vim*
+*vscode*
+*.cache*
+*.temp*
+
+# Hide lock files for now
+*lock.json*
