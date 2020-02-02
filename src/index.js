@@ -1,6 +1,7 @@
-import app from './js/app.js'
+import React from 'react'
+import ReactDOM from 'react-dom'
+
+import App from './js/App.js'
 import './styles.css'
 
-window.onload = function () {
-  document.body.appendChild(app({ name: 'Fred' }))
-}
+ReactDOM.render(<App name={'Fred'}/>, document.querySelector('main#app-root'))

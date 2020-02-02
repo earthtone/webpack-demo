@@ -1,9 +1,10 @@
-import heading from './components/heading.js'
+import React from 'react'
+import Heading from './components/Heading.js'
 
-export default function app ({ name } = { name: 'World' }) {
-  const root = document.createElement('main')
-  root.id = 'app-root'
-  root.appendChild(heading({ name }))
-
-  return root
+export default function App ({ name } = { name: 'World' }) {
+  return (
+    <main id="root">
+      <Heading name={name}/>
+    </main>
+  )
 }
