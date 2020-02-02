@@ -1,6 +1,8 @@
-import app from './js/app.js'
-import './styles.css'
+import Vue from 'vue'
+import App from './js/App.vue'
 
-window.onload = function () {
-  document.body.appendChild(app({ name: 'Fred' }))
-}
+new Vue({
+  render (h) {
+    return h(App)
+  }
+}).$mount('main#app-root')
