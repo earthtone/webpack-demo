@@ -1,6 +1,5 @@
-export default function heading ({ name }) {
-  const greet = n => `Hello, ${n}!`
-  const el = document.createElement('h1')
-  el.textContent = greet(name)
-  return el
+import { html } from 'lit-html'
+
+export default function Heading (name) {
+  return html`<h1>Hello, ${name}</h1>!`
 }

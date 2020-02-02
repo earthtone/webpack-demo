@@ -1,6 +1,5 @@
-import app from './js/app.js'
+import { render } from 'lit-html'
+import App from './js/App.js'
 import './styles.css'
 
-window.onload = function () {
-  document.body.appendChild(app({ name: 'Fred' }))
-}
+render(App({name: 'Fred'}), document.body)

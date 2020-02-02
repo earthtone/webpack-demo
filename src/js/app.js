@@ -1,9 +1,8 @@
-import heading from './components/heading.js'
+import { html } from 'lit-html'
+import Heading from './components/Heading.js'
 
-export default function app ({ name } = { name: 'World' }) {
-  const root = document.createElement('main')
-  root.id = 'app-root'
-  root.appendChild(heading({ name }))
-
-  return root
+export default function App ({ name } = { name: 'World' }) {
+  return html`<main id="app-root">
+    ${Heading(name)}
+  </main>`
 }
