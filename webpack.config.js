@@ -1,9 +1,6 @@
 const path = require('path')
 
-<<<<<<< HEAD
-=======
 const VueLoaderPlugin = require('vue-loader/lib/plugin')
->>>>>>> 5a32cf4... Add PostCSS Autoprefixer Plugin and Index HTML
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const StyleLintPlugin = require('stylelint-webpack-plugin')
 const HtmlWebpackPlugin = require('html-webpack-plugin')
@@ -24,10 +21,7 @@ module.exports = {
       test: /\.css$/,
       exclude: /node_modules/,
       use: [
-<<<<<<< HEAD
-=======
         'vue-style-loader',
->>>>>>> 5a32cf4... Add PostCSS Autoprefixer Plugin and Index HTML
         MiniCssExtractPlugin.loader,
         'css-loader',
         'postcss-loader'
@@ -49,11 +43,7 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: dev ? '[name].css' : '[name].[hash].css',
       chunkFilename: dev ? '[id].css' : '[name].[id].[hash].css'
-<<<<<<< HEAD
-    })
-=======
     }),
     new VueLoaderPlugin()
->>>>>>> 5a32cf4... Add PostCSS Autoprefixer Plugin and Index HTML
   ]
 }
