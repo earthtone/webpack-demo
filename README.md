@@ -10,5 +10,6 @@ There are currently four example branches, including the `master` branch, config
 - `lit-html`: [lit-html library](https://github.com/earthtone/webpack-demo/tree/lit-html)
 - `react`: [react framework](https://github.com/earthtone/webpack-demo/tree/react)
 - `vue`: [vue framework](https://github.com/earthtone/webpack-demo/tree/vue)
+- `elm`: [elm language](https://github.com/earthtone/webpack-demo/tree/elm)
 
 These examples are not designed to be comprehensive for production ready web applications. They are designed to provide a bare-bones starting point so that developers can better understand/reference the key concepts that popular scaffolding tools use under the hood. It is recommended that developers regularly refer the [official Webpack documentation](https://webpack.js.org/concepts/). Hopefully, the configuration/setup provided here is basic enough to help build an intution about [Webpack](https://webpack.js.org/).
