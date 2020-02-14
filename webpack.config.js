@@ -9,6 +9,19 @@ const dev = process.env.NODE_ENV !== 'production'
 module.exports = {
   module: {
     rules: [{
+      test: /\.elm$/,
+      exclude: [/elm-stuff/, /node_modules/],
+      use: [{
+        loader: 'elm-hot-webpack-loader'
+      }, {
+        loader: 'elm-webpack-loader',
+        options: {
+          cwd: __dirname,
+          verbose: true,
+          debug: true
+        }
+      }]
+    }, {
       test: /\.js$/,
       exclude: /node_modules/,
       use: 'babel-loader'

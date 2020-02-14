@@ -1,6 +1,5 @@
-import app from './js/app.js'
-import './styles.css'
+var Elm = require('./Main.elm').Elm
 
-window.onload = function () {
-  document.body.appendChild(app({ name: 'Fred' }))
-}
+var app = Elm.Main.init({
+  node: document.querySelector('body')
+})
